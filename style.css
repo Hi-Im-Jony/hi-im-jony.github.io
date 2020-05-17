@@ -131,4 +131,10 @@ footer {
   .project-info {
     flex: 7;
   }
+    
+  @media (max-width: 133vh) {
+    .project-container {
+      flex-direction: column;
+    }
+  }
 }
