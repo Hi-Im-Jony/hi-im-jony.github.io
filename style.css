@@ -385,13 +385,31 @@ footer {
 /* Mobile */
 @media (max-width: 1040px) {
   .project-container {
-    flex-direction: column-reverse;
-    border: solid purple;
+    flex-direction: column;
+    border: solid black;
   }
-  .removable {
-    display: none;
+  #projects {
+    height: 220vh;
+  }
+  .project-img-container {
+    flex: 6;
+  }
+
+  .project-info {
+    flex: 8;
+  }
+  .project-tile {
+    flex-direction: column-reverse;
+  }
+
+  #project-b {
+    flex-direction: column;
   }
 }
+.removable {
+  display: none;
+}
+
 /* Desktop */
 @media (min-width: 1040px) {
   .section-content {
