@@ -403,7 +403,7 @@ footer {
   }
 
   #project-b {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .removable {
