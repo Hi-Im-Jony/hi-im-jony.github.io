@@ -440,25 +440,24 @@ footer {
   :root {
     font-size: 20px;
   }
-    .nav-btns {
+  #welcome-section h1 {
+    font-size: 1.65rem;
+  }
+
+  .nav-btns {
     background-color: silver;
-}
- 
+  }
+
   .removable {
     display: none;
   }
 }
 
 /* Desktop */
-#welcome-text {
-  position: absolute;
-  bottom: 5%;
-}
 @media (min-width: 1040px) {
   :root {
     font-size: 30px;
   }
-    
   nav {
     font-size: 0.7rem;
   }
@@ -511,10 +510,6 @@ footer {
 }
 
 @media (min-width: 110vh) {
-    #welcome-text {
-  position: absolute;
-  bottom: 5%;
-}
   #projects {
     height: 100vh;
   }
