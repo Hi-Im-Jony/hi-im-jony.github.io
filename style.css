@@ -443,7 +443,10 @@ footer {
     .nav-btns {
     background-color: silver;
 }
-
+ h1{
+        font-size:0.8rem;
+        color: blue;
+    }
   .removable {
     display: none;
   }
@@ -454,10 +457,7 @@ footer {
   :root {
     font-size: 30px;
   }
-    h1{
-        font-size:0.8rem;
-        color: blue;
-    }
+    
   nav {
     font-size: 0.7rem;
   }
