@@ -20,7 +20,7 @@ nav {
   width: 100%;
   height: 5%;
   z-index: 1;
-  top: 1vh;
+  top: 2%;
   justify-content: center;
 
   font-size: 1rem;
@@ -33,7 +33,6 @@ h1 {
   display: flex;
   height: 50%;
   width: 100%;
-
   align-items: flex-end;
   justify-content: center;
 }
@@ -42,12 +41,12 @@ h1 {
   color: aliceblue;
   border-top: solid black;
   border-bottom: solid black;
-  background-color: gray;
+  background-color: silver;
   padding: 0 10px;
   text-decoration: none;
 }
 .nav-btns:hover {
-  color: skyblue;
+  color: aquamarine;
   opacity: 1;
 }
 
@@ -66,7 +65,25 @@ h1 {
 #welcome-section {
   display: block;
   height: 98.9vh;
-  background-color: lightskyblue;
+  background-image: linear-gradient(180deg, khaki, lightskyblue);
+}
+#about {
+  background-image: linear-gradient(180deg, lightskyblue, lightgreen);
+}
+#projects {
+  height: 250vh;
+  background-image: linear-gradient(180deg, lightgreen, lightpink);
+}
+#contact {
+  background-image: linear-gradient(180deg, lightpink, khaki);
+}
+
+footer {
+  height: 10vh;
+  background-color: khaki;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
 }
 #welcome-text-section {
   position: relative;
@@ -140,9 +157,6 @@ h1 {
   height: 10%;
   transition-duration: 250ms;
 }
-#about {
-  background-color: lightgreen;
-}
 
 .section {
   text-align: center;
@@ -175,11 +189,17 @@ h1 {
   align-items: center;
 }
 
-.section-text {
+.section-text-container {
   flex: 1;
   width: 98%;
   border-top: solid black;
   border-bottom: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  width: 100%;
 }
 
 .section-img {
@@ -187,11 +207,6 @@ h1 {
   flex: 2;
   width: 75%;
   border: solid wheat;
-}
-
-#projects {
-  height: 250vh;
-  background-color: lightpink;
 }
 
 .project-container {
@@ -243,14 +258,20 @@ h1 {
   text-align: center;
   height: 10%;
 }
+
+.project-title a {
+  color: dodgerblue;
+}
 .project-description {
   overflow-y: scroll;
   font-size: 1rem;
   height: 40%;
-  text-align: center;
 
   border-top: solid black;
   border-bottom: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .project-description::-webkit-scrollbar {
   display: none;
@@ -258,7 +279,7 @@ h1 {
 
 .project-links {
   background-color: black;
-  border: solid transparent;
+  border: hidden transparent;
   color: aliceblue;
   height: 5vh;
   width: 5vh;
@@ -270,7 +291,7 @@ h1 {
 }
 .project-links:hover {
   border: solid white;
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition-duration: 250ms;
 }
 .project-links:not(:hover) {
@@ -279,21 +300,22 @@ h1 {
 }
 
 .more-projects-container {
-  border: solid green;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 #more-projects-btn {
-  color: aliceblue;
+  color: black;
+  background-color: lightblue;
+  box-shadow: 0px 0px 20px gray;
   text-decoration: none;
-
+  font-size: 1rem;
   display: flex;
   height: 5vh;
   width: 40%;
 
-  border: solid blue;
+  border: solid white;
 
   justify-content: center;
   align-items: center;
@@ -301,7 +323,7 @@ h1 {
 #more-projects-btn:hover {
   height: 6vh;
   width: 44%;
-
+  font-size: 1.1rem;
   transition-duration: 250ms;
 }
 #more-projects-btn:not(:hover) {
@@ -309,9 +331,6 @@ h1 {
   width: 40%;
 
   transition-duration: 200ms;
-}
-#contact {
-  background-color: lightsalmon;
 }
 
 .contact-info {
@@ -327,6 +346,10 @@ h1 {
   margin: 20px;
 
   font-size: 1.3rem;
+}
+
+.contact-info span a {
+  color: dodgerblue;
 }
 #bigger {
   font-size: 2rem;
@@ -378,25 +401,15 @@ h1 {
   font-size: 45px;
 }
 
-footer {
-  height: 10vh;
-  background-color: lightsalmon;
-  font-size: 0.7rem;
-  display: flex;
-  justify-content: center;
-}
 #footer-text {
   position: relative;
-  
 }
 /* Mobile */
 @media (max-width: 1040px) {
   :root {
     font-size: 20px;
   }
-  nav {
-    top: 1.7vh;
-  }
+
   .removable {
     display: none;
   }
@@ -417,10 +430,13 @@ footer {
     position: relative;
   }
 
-  .section-text {
+  .section-text-container {
     width: 55%;
     height: 20%;
     position: absolute;
+  }
+  .text {
+    height: 50%;
   }
 
   .section-img {
@@ -457,8 +473,9 @@ footer {
 
 @media (min-width: 110vh) {
   #projects {
-    height: 110vh;
+    height: 100vh;
   }
+
   .project-container {
     flex-direction: row;
     height: 60vh;
