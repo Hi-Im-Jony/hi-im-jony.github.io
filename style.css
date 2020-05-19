@@ -451,6 +451,9 @@ footer {
   :root {
     font-size: 30px;
   }
+    h1{
+        font-size:0.8rem;
+    }
   nav {
     font-size: 0.7rem;
   }
