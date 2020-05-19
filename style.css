@@ -440,6 +440,9 @@ footer {
   :root {
     font-size: 20px;
   }
+    .nav-btns {
+    background-color: silver;
+}
 
   .removable {
     display: none;
