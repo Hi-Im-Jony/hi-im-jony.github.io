@@ -443,16 +443,17 @@ footer {
     .nav-btns {
     background-color: silver;
 }
- #welcome-section h1{
-        font-size: 1.8rem;
-        
-    }
+ 
   .removable {
     display: none;
   }
 }
 
 /* Desktop */
+#welcome-text {
+  position: absolute;
+  bottom: 5%;
+}
 @media (min-width: 1040px) {
   :root {
     font-size: 30px;
@@ -510,6 +511,10 @@ footer {
 }
 
 @media (min-width: 110vh) {
+    #welcome-text {
+  position: absolute;
+  bottom: 5%;
+}
   #projects {
     height: 100vh;
   }
