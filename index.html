@@ -12,60 +12,37 @@
   </head>
 
   <body>
-    <input id="nav-controller" type="checkbox" checked />
-    <nav>
+    <nav id="navbar">
       <div class="nav-btns-container">
         <a class="nav-btns" id="home-btn" href="#welcome-section">
-          <i class="fas fa-home fa-lg"></i>
           Home
         </a>
-
-        <a class="nav-btns" id="projects-btn" href="#projects">
-          <i class="fas fa-project-diagram fa-lg"></i>
-          Projects
-        </a>
-
         <a class="nav-btns" id="about-btn" href="#about">
-          <i class="far fa-user-circle fa-lg"></i>
           About Me
         </a>
 
+        <a class="nav-btns" id="projects-btn" href="#projects">
+          Projects
+        </a>
+
         <a class="nav-btns" id="contact-btn" href="#contact">
-          <i class="fas fa-mail-bulk fa-lg"></i> Contact Me
+          Contact Me
         </a>
-      </div>
-      <div class="contact-btns-container">
-        <a class="contact-btns" id="git-btn" href="#">
-          GitHub
-          <i class="fab fa-github-square fa-lg"></i>
-        </a>
-        <a class="contact-btns" id="fcc-btn" href="#">
-          FreeCodeCamp
-          <i class="fab fa-free-code-camp fa-lg"></i>
-        </a>
-
-        <a class="contact-btns" id="linkd-btn" href="#">
-          Linkedin
-          <i class="fab fa-linkedin-in fa-lg"></i>
-        </a>
-      </div>
-      <div id="nav-text">
-        <em>Cornel Jonathan Cicai</em>
-
-        <em class="removable">"Make it so..."</em>
       </div>
     </nav>
 
     <div id="welcome-section">
       <div id="welcome-text-section">
         <div id="welcome-text">
-          <u><em>Hello There... I'm Jonathan</em></u>
+          <h1>
+            <em>Hello There... I'm Jonathan</em>
+          </h1>
         </div>
       </div>
       <div class="welcome-btns-container">
         <a href="#about" class="welcome-btns">About Me</a>
         <a href="#projects" class="welcome-btn-s">
-          <div class="welcome-btn-text">Past Projects</div>
+          Past Projects
         </a>
         <a href="#contact" class="welcome-btns">Contact Me</a>
       </div>
@@ -73,7 +50,7 @@
 
     <div class="section" id="about">
       <div class="section-title-area">
-        <span>About Me</span>
+        <span><em>Let Me Introduce Myself...</em></span>
       </div>
       <div class="section-content">
         <div id="text-1" class="section-text">
@@ -86,43 +63,42 @@
           Text
         </div>
         <div id="img-2" class="section-img removable">
-          Img
+          removable
         </div>
       </div>
     </div>
 
     <div class="section" id="projects">
       <div class="section-title-area">
-        <span>Projects</span>
+        <span><em>Go On... Take A Peek</em></span>
       </div>
       <div class="project-container">
         <div class="project-tile">
           <div class="project-info">
             <div class="project-text">
-              <header class="project-title">Project A</header>
+              <header class="project-title"><u>Project A</u></header>
               <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia beatae dolorem nhil laboriosam possimus molestias
-                commodi voluptas dolore qui dignissimos tenetur at amet in
-                soluta, ipsa impedit expedita, aliquid omnis. Eaque, assumenda
-                amet ipsam, repudiandae quas debitis, veniam perspiciatis
-                recusandae tempore architecto culpa eius doloribus nam quod
-                voluptatibus laboriosam voluptas. lorem200
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+                dolore, nobis quis quisquam ipsa accusantium hic iusto animi
+                aliquam deleniti quidem quaerat eveniet repudiandae quos quasi
+                nam natus sint pariatur quia suscipit at, odit assumenda officia
+                voluptatem. Eius numquam voluptates dolore vel tempora natus
+                maxime ab sunt iure illum. Cum.
               </p>
-              <div class="project-links">s</div>
+              <div class="project-links">
+                <i class="far fa-file-code"></i>
+              </div>
             </div>
           </div>
-          <a href="#" class="project-img-container">
-            <img url="https://codepen.io/cornel_jonathan_cicai/full/YzyvRXX" />
-          </a>
+          <a href="#" class="project-img-container"> </a>
         </div>
 
-        <div class="project-tile">
-          <div class="project-img-container">Project Img</div>
+        <div id="project-b" class="project-tile">
+          <a href="#" class="project-img-container"></a>
           <div class="project-info">
             <div class="project-text">
-              <header class="project-title">Project B</header>
-              <div class="project-description">
+              <header class="project-title"><u>Project B</u></header>
+              <p class="project-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
                 exercitationem laboriosam cupiditate nam, ea vel magnam
                 inventore odio itaque sint voluptatibus sunt eum nostrum ad
@@ -159,8 +135,10 @@
                 distinctio totam voluptatum nemo, consequuntur ab recusandae
                 dignissimos incidunt officiis doloremque debitis sequi veritatis
                 ipsam consectetur optio accusamus? Voluptatum error quas modi?
+              </p>
+              <div class="project-links">
+                <i class="far fa-file-code"></i>
               </div>
-              <div class="project-links">s</div>
             </div>
           </div>
         </div>
@@ -175,24 +153,24 @@
     <div class="section" id="contact">
       <div class="section-title-area"></div>
       <div class="contact-info">
-        <span> <em> Let's have a chat... </em> </span>
+        <span id="bigger"> <em> Let's have a chat... </em> </span>
         <span>
           <em>Email me anytime at</em>
           <a href="mailto:jccicai@yahoo.ie">jccicai@yahoo.ie</a>
         </span>
         <span> <em> Or reach out here:</em> </span>
         <div class="round-btns-container">
-          <a href="#">
+          <a target="_blank" href="#">
             <div class="round-btn" id="git-icon">
               <i class="fab fa-github"></i>
             </div>
           </a>
-          <a href="#">
+          <a id="profile-link" target="_blank" href="#">
             <div class="round-btn">
               <i class="fab fa-free-code-camp"></i>
             </div>
           </a>
-          <a href="#">
+          <a target="_blank" href="#">
             <div class="round-btn">
               <i class="fab fa-linkedin-in" id="linkd-icon"></i>
             </div>
@@ -202,7 +180,9 @@
     </div>
 
     <footer>
-      I'm the footer
+      <div id="footer-text">
+        &copy; Cornel Jonathan Cicai 2020
+      </div>
     </footer>
   </body>
 </html>
